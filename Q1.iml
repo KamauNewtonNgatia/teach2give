@@ -1,0 +1,16 @@
+def countVowels(input_string):
+    vowels = "aeiouAEIOU"  # List of vowels (both lowercase and uppercase)
+    count = 0  # Initialize a counter for vowels
+
+    for char in input_string:
+        if char in vowels:
+            count += 1
+
+    return count
+
+# Examples
+print(countVowels("hello world"))           # Output: 3
+print(countVowels("The quick brown fox"))   # Output: 5
+print(countVowels("AEIOU"))                 # Output: 5
+print(countVowels("Python Programming"))    # Output: 4
+
